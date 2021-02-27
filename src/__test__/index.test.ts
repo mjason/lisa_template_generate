@@ -48,6 +48,7 @@ describe("main 测试", () => {
     expect("src").toBePathExists()
     expect("templates").toBePathExists()
     expect(".gitignore").toBePathExists()
+    expect("README.md").toBePathExists()
   })
 })
 

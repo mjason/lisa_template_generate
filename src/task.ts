@@ -8,6 +8,7 @@ export default ({job, fs, application, ...core} = lisa) => {
       await fs.mkdir(application.root)
       fs.project.template_path = path.join(__dirname, "../templates")
       await fs.project.template("package.json.ejs", "package.json", application.packageJSON)
+      await fs.project.touch("./README.md")
       await fs.project.copy("tsconfig.json", "tsconfig.json")
       await fs.project.copy("jest.config.js", "jest.config.js")
       await fs.project.copy("gitignore", ".gitignore")
