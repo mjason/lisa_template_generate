@@ -1,6 +1,6 @@
 import { application, fs, runner } from '@listenai/lisa_core';
 import { main } from '../index'
-import "./test_helper"
+import "@listenai/lisa_core/lib/test_helper"
 
 jest.useFakeTimers();
 

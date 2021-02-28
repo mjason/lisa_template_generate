@@ -1,6 +1,6 @@
-import { CliUx, flags } from '../ux'
+import { CliUx } from '../ux'
 import { stdin, MockSTDIN } from 'mock-stdin'
-import { mockArgv } from "./test_helper"
+import { mockArgv } from '@listenai/lisa_core/lib/test_helper'
 
 jest.unmock('mock-stdin');
 

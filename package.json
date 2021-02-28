@@ -1,6 +1,6 @@
 {
   "name": "lisa_template_generate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lisa 模版项目生成器 (使用typescript来写代码)",
   "author": "MJ",
   "license": "MIT",
@@ -22,7 +22,7 @@
     "debug": "npm run build && node index.js"
   },
   "dependencies": {
-    "@listenai/lisa_core": "^1.0.3",
+    "@listenai/lisa_core": "^1.0.5",
     "cli-ux": "^5.5.1"
   },
   "main": "./lib/index.js",

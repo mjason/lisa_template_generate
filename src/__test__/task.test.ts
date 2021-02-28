@@ -1,7 +1,7 @@
 import task from '../task'
 import * as lisa from '@listenai/lisa_core'
 import * as path from 'path'
-import "./test_helper"
+import "@listenai/lisa_core/lib/test_helper"
 
 test('lisa_template_generate:init_project', async () => {
   lisa.loadPackageJSON(path.join(__dirname, "../../package.json"))

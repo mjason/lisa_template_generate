@@ -5,7 +5,10 @@ export default ({job, fs, application, ...core} = lisa) => {
   job('lisa_template_generate:init_project', {
     title: '初始化项目',
     task: async () => {
-      await fs.mkdir(application.root)
+      const isPath = await fs.pathExists(application.root)
+      if (!isPath) {
+        await fs.mkdir(application.root)
+      }
       fs.project.template_path = path.join(__dirname, "../templates")
       await fs.project.template("package.json.ejs", "package.json", application.packageJSON)
       await fs.project.touch("./README.md")
