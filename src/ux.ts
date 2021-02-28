@@ -36,6 +36,7 @@ export function flags(key: string) {
 
 export class CliUx {
 
+  // 如果需要命令行输入的，请注入对应的flag，方便测试
   @flags("project_path")
   async getProjectPath() {
     const projectPath = await cli.prompt("请输入项目路径", {default: '.'})
