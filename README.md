@@ -5,4 +5,14 @@
 
 ## 使用
 
-`lisa create --template lisa_template_generate`
+`lisa create <projectName> --template lisa_template_generate`
+
+- 如果你不需要在子项目里面配置，在看到下面只字段的时候直接回车即可
+```
+请输入项目路径 [.]:
+```
+
+- 这里需要输入作者名
+```
+请输入作者名称: MJ
+```

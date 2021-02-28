@@ -1,6 +1,6 @@
 {
   "name": "lisa_template_generate",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Lisa 模版项目生成器 (使用typescript来写代码)",
   "author": "MJ",
   "license": "MIT",
