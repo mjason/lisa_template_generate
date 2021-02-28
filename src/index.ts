@@ -1,8 +1,7 @@
 import * as lisa from '@listenai/lisa_core'
 
-import cli from 'cli-ux'
 import * as path from 'path'
-import { getAuthor, getProjectName, getProjectPath } from './ux'
+import { CliUx } from './ux'
 
 import task from "./task"
 const { application, loadPackageJSON, runner } = lisa
@@ -10,11 +9,14 @@ const { application, loadPackageJSON, runner } = lisa
 export async function main() {
   loadPackageJSON(path.join(__dirname, "../package.json"))
 
-  application.root = await getProjectPath()
-  application.packageJSON.author = await getAuthor()
-  application.packageJSON.name = getProjectName(application.root)
+  const cliUx = new CliUx()
+
+  application.root = await cliUx.getProjectPath()
+  application.packageJSON.author = await cliUx.getAuthor()
+  application.packageJSON.name = cliUx.getProjectName(application.root)
 
   task(lisa)
+
   await runner('lisa_template_generate:init_project')
 }
 

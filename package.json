@@ -18,7 +18,8 @@
     "build": "./node_modules/.bin/tsc",
     "prepublish": "rm -rf lib && npm run build",
     "test": "npm run build && LISA_ENV=test ./node_modules/.bin/jest --coverage",
-    "test_watch": "LISA_ENV=test ./node_modules/.bin/jest --watch"
+    "test_watch": "LISA_ENV=test ./node_modules/.bin/jest --watch",
+    "debug": "npm run build && node index.js"
   },
   "dependencies": {
     "@listenai/lisa_core": "^1.0.3",
