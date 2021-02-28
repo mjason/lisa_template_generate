@@ -1,5 +1,5 @@
 {
-  "name": "@generator/lisa_template_generate",
+  "name": "@lisa_generator/lisa_template_generate",
   "version": "1.0.0",
   "description": "Lisa 模版项目生成器 (使用typescript来写代码)",
   "author": "MJ",
