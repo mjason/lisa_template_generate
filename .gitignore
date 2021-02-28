@@ -3,3 +3,4 @@ create_csk
 lib
 coverage
 .DS_Store
+out
