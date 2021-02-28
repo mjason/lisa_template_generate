@@ -4,7 +4,6 @@
 
 import { application, argv, flags } from '@listenai/lisa_core';
 import cli from 'cli-ux'
-import * as minimist from 'minimist'
 import * as path from 'path'
 
 export class CliUx {
