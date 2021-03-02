@@ -1,6 +1,6 @@
 {
   "name": "lisa_template_generate",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Lisa 模版项目生成器 (使用typescript来写代码)",
   "homepage": "https://github.com/mjason/lisa_template_generate",
   "author": "MJ <tywf91@gmail.com>",
